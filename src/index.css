@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@custom-variant dark (&:where(.dark, .dark *));
+@import "tailwindcss";
+@import "tailwind-animations";
+
+/* testborder */
+.testborder{
+    border: 2px solid red;
+}
+/* backgrounds */
+.dark #Background {
+    background-color: #000000;
+
+    background-image:
+        radial-gradient(#3e4877 15%, transparent 16%),
+        radial-gradient(#3246a7 15%, transparent 16%),
+        radial-gradient(#eaeaee00 15%, transparent 20%),
+        radial-gradient(#ffffff00 15%, transparent 20%);
+
+    background-position:
+        0 0,
+        3px 3px,
+        0 1px,
+        3px 4px;
+
+    background-size: 6px 6px;
+}
+
+.customShadow1 {
+    box-shadow: rgba(250, 250, 250, 0.664) 0px 5px 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
