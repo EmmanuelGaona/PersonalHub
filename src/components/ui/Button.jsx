@@ -1,14 +1,14 @@
 export default function Button({ text = "Visit", Link, className="" }) {
     return (
         <a href={Link} target="_blank" rel="noopener noreferrer"
-            className={`group relative flex  h-10 max-w-screen items-center justify-between border-4 border-black bg-black pl-1 pr-0 overflow-hidden ${className}`}
+            className={`group relative flex h-10 max-w-screen items-center justify-between overflow-hidden border-4 border-black bg-black pl-1 pr-0 ${className}`}
         >
             <span
                 className="absolute inset-y-0 right-0 w-0 bg-[#e65e5e] transition-all duration-300 ease-in-out group-hover:w-full"
             ></span>
 
             <span
-                className="relative z-10 font-sans text-sm font-black tracking-wider text-white transition-colors duration-300 group-hover:text-white pr-1"
+                className="relative z-10 pr-1 font-sans text-sm font-black tracking-wider text-white transition-colors duration-300 group-hover:text-white"
             >
                 {text}
             </span>

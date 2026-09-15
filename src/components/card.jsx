@@ -29,7 +29,7 @@ export default function Card({ Name = "None", Link, Type, msg }) {
             </div>
 
             <div className="absolute bottom-0 left-0 flex w-full translate-y-full items-center gap-3 border-t border-white/15 bg-slate-950/80 p-3 opacity-0 backdrop-blur-md transition-all duration-300 group-hover/card:translate-y-0 group-hover/card:opacity-100">
-                <p className="w-full whitespace-normal wrap-break-word px-1 text-xs leading-4 text-slate-200">{msg}</p>
+                    <p className="w-full whitespace-normal wrap-break-word px-1 text-xs leading-4 text-stone-100">{msg}</p>
                 <Button className="shrink-0" text="Visit" Link={Link} />
             </div>
         </div>

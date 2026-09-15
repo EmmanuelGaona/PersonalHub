@@ -26,6 +26,12 @@ const sites = [
     },
     {
         type: types.QUANTASITES,
+        name: "Attendance",
+        url: "https://hr.qmmcmx.com/HROldPages/Attn/Modify_Attandence_assistant_min.aspx?Site=QMMC&Flag=4&languageType=en-US",
+        msg: "Overtime, attendancy, permissions, etc. ",
+    },
+    {
+        type: types.QUANTASITES,
         name: "IWorkFlow",
         url: "https://iworkflow/Default.aspx",
         msg: "Application forms",

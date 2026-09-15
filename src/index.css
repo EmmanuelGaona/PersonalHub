@@ -4,9 +4,6 @@
 @import "tailwind-animations";
 
 /* testborder */
-.testborder{
-    border: 2px solid red;
-}
 /* backgrounds */
 .dark #Background {
     background-color: #000000;

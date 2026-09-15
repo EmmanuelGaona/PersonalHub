@@ -5,12 +5,13 @@ import {
   ChevronDown, ArrowRight, Monitor, Star,
 } from "lucide-react";
 import Card from "../components/card";
-import sites from "../data/sites";
+import { useSites } from "../context/SitesContext";
 
 
 
 /* ── Page ─────────────────────────────────────────────────────────────────── */
 export default function LandingPage() {
+  const { sites } = useSites();
   const groupedSites = sites.reduce((acc, site) => {
     if (!acc[site.type]) {
       acc[site.type] = []
@@ -38,7 +39,7 @@ export default function LandingPage() {
               key={type}
               href={`#${type}`}
               className="
-            border-l-2 border-transparent pl-2 py-2 text-xs font-semibold uppercase tracking-wider text-slate-300
+            border-l-2 border-transparent pl-2 py-2 text-xs font-semibold uppercase tracking-wider text-stone-300
             hover:border-cyan-400 hover:bg-white/5 hover:text-cyan-300 transition-all
           "
             >
